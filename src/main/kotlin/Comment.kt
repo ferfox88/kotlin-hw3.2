@@ -3,8 +3,6 @@ package ru.netology
 data class Comment(
     var cid: Int = 0,
     val noteId: Int, //	идентификатор заметки.
-    //val replyTo: Int, //идентификатор пользователя, ответом на комментарий которого
-    // является добавляемый комментарий (не передаётся, если комментарий не является ответом).
-    //положительное число
-    val message: String //текст комментария
+    val message: String, //текст комментария
+    val markAsDeleted: Boolean = false
 )
